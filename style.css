@@ -1,0 +1,7 @@
+.btn-group-vertical {
+    width: 100%;
+}
+
+.btn-group-vertical button {
+    height: 50px;
+}
