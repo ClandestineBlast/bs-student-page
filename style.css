@@ -8,7 +8,7 @@
 
 .navbar-container{
     margin: 0%;
-    display: left;
+    display: inline;
     justify-content: flex-start;
     
 }
@@ -24,7 +24,7 @@ img {
 
 .top-photo{
     justify-content: center;
-    width: 1000px;
+    
     background-color:aqua;
     align-content: center;
     display: inline;
