@@ -39,6 +39,9 @@ img {
     flex-direction: column;
 }
 
+.alert{
+    position: absolute;
+}
 .btn-close{
-  
+  position: relative;
 }
