@@ -8,7 +8,7 @@
 
 .navbar-container{
     margin: 0%;
-    display: inline;
+    display: left;
     justify-content: flex-start;
     
 }
