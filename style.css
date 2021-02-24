@@ -45,3 +45,8 @@ img {
 .btn-close{
   position: relative;
 }
+
+.navigationBar{
+    display: grid;
+    justify-content: center;
+}
