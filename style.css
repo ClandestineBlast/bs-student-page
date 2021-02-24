@@ -43,10 +43,17 @@ img {
     position: absolute;
 }
 .btn-close{
-  position: relative;
+    float:right;
 }
 
 .navigationBar{
     display: grid;
     justify-content: center;
+}
+
+.btn btn btn-info btn-lg {
+border: 2 px;
+background-color: rgb(221, 248, 248);
+
+
 }
