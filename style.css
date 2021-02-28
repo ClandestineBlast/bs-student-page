@@ -39,3 +39,21 @@ img {
     flex-direction: column;
 }
 
+.alert{
+    position: absolute;
+}
+.btn-close{
+    float:right;
+}
+
+.navigationBar{
+    display: grid;
+    justify-content: center;
+}
+
+.btn btn btn-info btn-lg {
+border: 2 px;
+background-color: rgb(221, 248, 248);
+
+
+}
