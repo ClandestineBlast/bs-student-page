@@ -67,9 +67,9 @@
         <div class="row">
             <div class="col-3 left-menu">
                 <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
-                    <button type="button" class="btn btn-light">Личные данные</button>
-                    <button type="button" class="btn btn-light">Мои группы</button>
-                    <button type="button" class="btn btn-light">Мои занятия</button>
+                    <button type="button" class="btn btn-light" target="#alerts-window">Оповещения</button>
+                    <button type="button" class="btn btn-light" target="#groups-window">Мои группы</button>
+                    <button type="button" class="btn btn-light" target="#lessons-window">Мои занятия</button>
                     <button type="button" class="btn btn-light">Мое расписание</button>
                     <button type="button" class="btn btn-light">Мои домашки</button>
                     <button type="button" class="btn btn-light">Оплата</button>
@@ -87,40 +87,64 @@
                     <button type="button" class="btn btn-light">Настройки</button>
                 </div>
             </div>
-            <div class="col-9 event-feed">
-                <div class>
-                    <br><br>
-                    <div class="alert alert-primary" role="alert">
-                        Преподаватель принял вашу домашнюю работу "Циклы".
-                        <button type="button" class="btn-close" aria-label="Close"></button>
+            <div class="col-9 main-window">
+                <div id="alerts-window" class="active">
+                    <div class>
+                        <br><br>
+                        <div class="alert alert-primary" role="alert">
+                            Преподаватель принял вашу домашнюю работу "Циклы".
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                            Защита курса переносится на 24 сентября в 12.00!
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            У вас осталось 2 дня на выполнение домашней работы "Двумерные массивы"!
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            Необходимо произвести оплату курса 15 сентября!
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
                     </div>
-                    <div class="alert alert-secondary" role="alert">
-                        Защита курса переносится на 24 сентября в 12.00!
-                        <button type="button" class="btn-close" aria-label="Close"></button>
-                    </div>
-                    <div class="alert alert-success" role="alert">
-                        У вас осталось 2 дня на выполнение домашней работы "Двумерные массивы"!
-                        <button type="button" class="btn-close" aria-label="Close"></button>
-                    </div>
-                    <div class="alert alert-danger" role="alert">
-                        Необходимо произвести оплату курса 15 сентября!
-                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    <div class="navigationBar">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="navigationBar">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div id="groups-window" class="hidden">
+                    <h5>Мои группы</h5>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, illo! Commodi impedit, culpa animi rerum distinctio delectus, beatae quaerat atque id tempore excepturi! Deserunt quaerat alias, assumenda atque cumque necessitatibus.
+                        Inventore recusandae possimus maxime distinctio? Sed blanditiis voluptatibus veritatis nam, laboriosam dolores exercitationem fuga adipisci doloribus itaque. Quam mollitia, adipisci id eveniet illum sed molestiae exercitationem nesciunt amet, beatae repellendus.
+                        Sequi, iusto esse? Possimus error voluptatibus repudiandae porro magnam alias nisi, quasi dicta, debitis cupiditate architecto itaque incidunt voluptas corporis dolores laudantium, officia impedit inventore odio laborum necessitatibus ex vero.
+                        Voluptates, culpa sint, fugiat ullam possimus accusamus autem repudiandae at veritatis consectetur facilis vero praesentium odit pariatur amet numquam. Fugit neque et debitis ipsam sint minima, corrupti laborum alias provident!
+                        Doloremque ipsa veritatis ipsam quia voluptates incidunt laboriosam maiores rem libero, debitis suscipit provident quam odio. Iure ab quae, accusamus fugiat cumque impedit repellendus cupiditate quasi nostrum, veritatis quo rerum.
+                    </span>
+                </div>
+                <div id="lessons-window" class="hidden">
+                    <h5>Мои занятия</h5>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, illo! Commodi impedit, culpa animi rerum distinctio delectus, beatae quaerat atque id tempore excepturi! Deserunt quaerat alias, assumenda atque cumque necessitatibus.
+                        Inventore recusandae possimus maxime distinctio? Sed blanditiis voluptatibus veritatis nam, laboriosam dolores exercitationem fuga adipisci doloribus itaque. Quam mollitia, adipisci id eveniet illum sed molestiae exercitationem nesciunt amet, beatae repellendus.
+                        Sequi, iusto esse? Possimus error voluptatibus repudiandae porro magnam alias nisi, quasi dicta, debitis cupiditate architecto itaque incidunt voluptas corporis dolores laudantium, officia impedit inventore odio laborum necessitatibus ex vero.
+                        Voluptates, culpa sint, fugiat ullam possimus accusamus autem repudiandae at veritatis consectetur facilis vero praesentium odit pariatur amet numquam. Fugit neque et debitis ipsam sint minima, corrupti laborum alias provident!
+                        Doloremque ipsa veritatis ipsam quia voluptates incidunt laboriosam maiores rem libero, debitis suscipit provident quam odio. Iure ab quae, accusamus fugiat cumque impedit repellendus cupiditate quasi nostrum, veritatis quo rerum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odio pariatur, officiis dolores quos accusantium quas temporibus beatae ab praesentium repellendus, assumenda minus nemo eaque illum sunt illo totam maxime.
+                        Adipisci mollitia a deleniti accusantium laboriosam consectetur et, dignissimos minus ea iure rerum assumenda harum nisi blanditiis quo molestias commodi ut minima. Quaerat, reprehenderit illum tenetur libero molestias eius facere!
+                    </span>
                 </div>
             </div>
 
@@ -130,6 +154,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <script src="./buttons.js"></script>    
 </body>
 
 </html>
